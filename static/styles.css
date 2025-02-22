@@ -1,0 +1,66 @@
+/* Importar fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap');
+
+/* Estilo general del body */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente moderna y limpia */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilo del header */
+header {
+    font-family: 'Playfair Display', serif; /* Fuente elegante y llamativa */
+    background-color: #33e187;
+    color: #7e2626;
+    padding: 1em 0;
+    font-size: 24px; /* Aumentamos el tamaño para destacar */
+    font-weight: 700; /* Negrita para mayor impacto */
+}
+
+/* Estilo de la navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px; /* Espaciado entre los elementos */
+}
+
+nav ul li a {
+    font-family: 'Roboto', sans-serif; /* Fuente moderna para los enlaces */
+    color: white;
+    text-decoration: none;
+    font-size: 18px; /* Tamaño más grande para los enlaces */
+    font-weight: 500; /* Semi-negrita para destacar */
+    transition: color 0.3s ease; /* Efecto suave al pasar el cursor */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Cambio de color al pasar el cursor */
+}
+
+/* Estilo del contenido principal */
+main {
+    font-family: 'Playfair Display', serif; /* Fuente elegante para el contenido */
+    padding: 20px;
+    font-size: 18px; /* Tamaño legible */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #333; /* Color oscuro para mejorar la legibilidad */
+}
+
+/* Estilo del footer */
+footer {
+    font-family: 'Roboto', sans-serif; /* Fuente moderna para el pie de página */
+    background-color: #6b9341;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px; /* Tamaño pequeño para el pie de página */
+    font-weight: 400; /* Peso normal */
+}

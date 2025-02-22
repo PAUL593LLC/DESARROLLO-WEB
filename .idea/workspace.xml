@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fda6d5e6-7597-4927-a2fc-fd96fd3d5827" name="Changes" comment="TAREA SEMANA 9" />
+    <list default="true" id="fda6d5e6-7597-4927-a2fc-fd96fd3d5827" name="Changes" comment="TAREA SEMANA9">
+      <change afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,15 +21,28 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Flask Main" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;PAUL593LLC&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/PAUL593LLC/DESARROLLO-WEB.git&quot;,
+    &quot;accountId&quot;: &quot;0b08285d-3f26-4d09-a3e5-586347ada581&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2tKJANlkue45BWBR9hZf4Z8Csak" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -31,9 +51,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Flask server.Flask (TAREA SEMANA 10.py).executor": "Run",
     "Flask server.MIPROYECTOWEB.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -77,7 +99,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1740094689758</updated>
-      <workItem from="1740094690610" duration="6976000" />
+      <workItem from="1740094690610" duration="7260000" />
+      <workItem from="1740108422462" duration="1319000" />
+      <workItem from="1740242689069" duration="3909000" />
     </task>
     <task id="LOCAL-00001" summary="TAREA SEMANA 9">
       <option name="closed" value="true" />
@@ -87,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740107424292</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="TAREA SEMANA9">
+      <option name="closed" value="true" />
+      <created>1740107570862</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740107570862</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,9 +127,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="TAREA SEMANA 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="TAREA SEMANA 9" />
+    <MESSAGE value="TAREA SEMANA9" />
+    <option name="LAST_COMMIT_MESSAGE" value="TAREA SEMANA9" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MIPROYECTOWEB$MIPROYECTOWEB.coverage" NAME="MIPROYECTOWEB Coverage Results" MODIFIED="1740107328426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/MIPROYECTOWEB$Flask__TAREA_SEMANA_10_py_.coverage" NAME="Flask (TAREA SEMANA 10.py) Coverage Results" MODIFIED="1740109360366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/MIPROYECTOWEB$MIPROYECTOWEB.coverage" NAME="MIPROYECTOWEB Coverage Results" MODIFIED="1740250776415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
