@@ -1,4 +1,20 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for, flash
+from flask_wtf import FlaskForm
+from wtforms import StringField, SubmitField
+from wtforms.validators import DataRequired
+
+app = Flask(__name__)
+app.config['SECRET KEY'] = 'mi_secreto_seguro' #necesario para formularios con CSRF
+
+# Definir la clase de formulario
+
+class Formulario(FlaskForm):
+ nombre = StringField('Nombre',
+validators=[DataRequired()])
+ enviar = SubmitField('Enviar')
+
+
+
 
 app = Flask(__name__)
 
