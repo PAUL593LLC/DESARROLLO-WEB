@@ -34,10 +34,11 @@ def usuario(nombre):
 # Ruta con formulario para ingresar nombre
 @app.route('/usuario/formulario', methods=['GET', 'POST'])
 def usuario_form():
-    if request.method == 'POST':
-        nombre = request.form['nombre']
-        return render_template('usuario.html', nombre=nombre)
-    return render_template('formulario.html')
+    form = Formulario()  # Instancia del formulario
+    if form.validate_on_submit():
+        nombre = form.nombre.data
+        return redirect(url_for('usuario', nombre=nombre))
+    return render_template('formulario.html', form=form)  # ¡Pasa el formulario!
 
 if __name__ == '__main__':
     app.run(debug=True)
