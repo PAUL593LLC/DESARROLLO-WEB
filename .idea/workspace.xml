@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fda6d5e6-7597-4927-a2fc-fd96fd3d5827" name="Changes" comment="Validacion de Formularios..." />
+    <list default="true" id="fda6d5e6-7597-4927-a2fc-fd96fd3d5827" name="Changes" comment="Validacion de Formularios...">
+      <change afterPath="$PROJECT_DIR$/datos/datos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/formulario.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/formulario.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +21,7 @@
         <option value="Flask Main" />
         <option value="Python Script" />
         <option value="HTML File" />
+        <option value="SQL File" />
       </list>
     </option>
   </component>
@@ -102,6 +108,13 @@
       <workItem from="1740864836031" duration="480000" />
       <workItem from="1740865331671" duration="1923000" />
       <workItem from="1740868506582" duration="235000" />
+      <workItem from="1740964593502" duration="455000" />
+      <workItem from="1740966599487" duration="36000" />
+      <workItem from="1740966752967" duration="966000" />
+      <workItem from="1741486984991" duration="4000" />
+      <workItem from="1741490994452" duration="4316000" />
+      <workItem from="1741566036561" duration="1812000" />
+      <workItem from="1741569556716" duration="2043000" />
     </task>
     <task id="LOCAL-00001" summary="TAREA SEMANA 9">
       <option name="closed" value="true" />
@@ -159,6 +172,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MIPROYECTOWEB$Flask__TAREA_SEMANA_10_py_.coverage" NAME="Flask (TAREA SEMANA 10.py) Coverage Results" MODIFIED="1740109360366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/MIPROYECTOWEB$MIPROYECTOWEB.coverage" NAME="MIPROYECTOWEB Coverage Results" MODIFIED="1740861905266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/MIPROYECTOWEB$MIPROYECTOWEB.coverage" NAME="MIPROYECTOWEB Coverage Results" MODIFIED="1741495436924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

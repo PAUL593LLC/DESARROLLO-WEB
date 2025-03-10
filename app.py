@@ -14,8 +14,6 @@ validators=[DataRequired()])
  enviar = SubmitField('Enviar')
 
 
-
-
 app = Flask(__name__)
 
 # Página de inicio
