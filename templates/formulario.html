@@ -1,8 +1,11 @@
 {% extends "base.html" %}
+
 {% block title %} Formulario {% endblock %}
+
 {% block content %}
 <h2>Formulario</h2>
 <form method="POST">
+    {{ form.csrf_token }}
     {{ form.hidden_tag() }}
     <p>
         {{ form.nombre.label }}<br>
