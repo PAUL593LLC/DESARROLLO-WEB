@@ -3,8 +3,17 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired, Length
 from Conexion.conexion import obtener_conexion
+from flask_login import LoginManager
+
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'mi_secreto_seguro'  # Necesario para formularios con CSRF
+
+# Login manager
+login_manager = LoginManager()
+login_manager.init_app(app)
+login_manager.login_view = 'login'
+
 
 # Definir la clase de formulario
 class Formulario(FlaskForm):
@@ -76,6 +85,45 @@ def usuarios_tabla():
         return render_template('usuarios_formulario.html', usuarios=usuarios)
     else:
         return "Error en la conexión a la base de datos", 500
+
+@app.route('/registro', methods=['GET', 'POST'])
+def registro():
+    if request.method == 'POST':
+        nombre = request.form['nombre']
+        email = request.form['email']
+        password = request.form['password']
+        password_hash = generate_password_hash(password)
+
+        conexion = obtener_conexion()
+        cursor = conexion.cursor()
+        cursor.execute("INSERT INTO usuarios (nombre, email, password) VALUES (%s, %s, %s)",
+                       (nombre, email, password_hash))
+        conexion.commit()
+        flash('Usuario registrado correctamente')
+        return redirect(url_for('login'))
+    return render_template('registro.html')
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        email = request.form['email']
+        password = request.form['password']
+
+        usuario = Usuario.obtener_por_email(email)
+
+        if usuario and usuario.verificar_password(password):
+            login_user(usuario)
+            flash('Inicio de sesión exitoso')
+            return redirect(url_for('protegido'))
+        else:
+            flash('Email o contraseña incorrectos')
+
+    return render_template('login.html')
+
+@login_manager.user_loader
+def load_user(user_id):
+    return Usuario.obtener_por_id(user_id)
+
 
 # Ejecutar la aplicación
 if __name__ == '__main__':
