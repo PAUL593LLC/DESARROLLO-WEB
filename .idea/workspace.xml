@@ -4,12 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fda6d5e6-7597-4927-a2fc-fd96fd3d5827" name="Changes" comment="Configuración,  modelos y consultas básicas.">
-      <change afterPath="$PROJECT_DIR$/modelos/modelos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/resgistro.html" afterDir="false" />
+    <list default="true" id="fda6d5e6-7597-4927-a2fc-fd96fd3d5827" name="Changes" comment="Bases de datos y login">
+      <change afterPath="$PROJECT_DIR$/templates/crear_producto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/editar_producto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/eliminar_producto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/productos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conexion/conexion.py" beforeDir="false" afterPath="$PROJECT_DIR$/Conexion/conexion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/Usuario1" beforeDir="false" afterPath="$PROJECT_DIR$/modelos/productos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datos/datos.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelos/modelos.py" beforeDir="false" afterPath="$PROJECT_DIR$/modelos/modelos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/formulario.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/formulario.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/resgistro.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/resgistro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/resultado.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/resultado.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/usuarios_formulario.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/usuarios_formulario.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +34,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Flask Main" />
-        <option value="HTML File" />
         <option value="SQL File" />
+        <option value="package.json" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -52,6 +67,9 @@
     &quot;accountId&quot;: &quot;0b08285d-3f26-4d09-a3e5-586347ada581&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app.py" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -99,8 +117,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PY-243.25659.43" />
-        <option value="bundled-python-sdk-181015f7ab06-4df51de95216-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.25659.43" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PY-243.26053.29" />
+        <option value="bundled-python-sdk-b1dbf8ef85a6-4df51de95216-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.26053.29" />
       </set>
     </attachedChunks>
   </component>
@@ -139,7 +157,16 @@
       <workItem from="1742711450843" duration="502000" />
       <workItem from="1742778174173" duration="934000" />
       <workItem from="1742779132053" duration="264000" />
-      <workItem from="1742779410864" duration="2285000" />
+      <workItem from="1742779410864" duration="3877000" />
+      <workItem from="1742786688069" duration="531000" />
+      <workItem from="1742787237105" duration="1634000" />
+      <workItem from="1742788897930" duration="2012000" />
+      <workItem from="1742790940812" duration="960000" />
+      <workItem from="1743260258590" duration="3000" />
+      <workItem from="1743265041681" duration="2877000" />
+      <workItem from="1743283716214" duration="2755000" />
+      <workItem from="1743288889244" duration="601000" />
+      <workItem from="1743289505810" duration="4067000" />
     </task>
     <task id="LOCAL-00001" summary="TAREA SEMANA 9">
       <option name="closed" value="true" />
@@ -229,7 +256,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742331200917</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Bases de datos y login">
+      <option name="closed" value="true" />
+      <created>1742783708873</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1742783708873</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,10 +280,11 @@
     <MESSAGE value="Manejo de datos y Validacion de Formularios" />
     <MESSAGE value="Manejo de datos y Validacion de Formularios----" />
     <MESSAGE value="Configuración,  modelos y consultas básicas." />
-    <option name="LAST_COMMIT_MESSAGE" value="Configuración,  modelos y consultas básicas." />
+    <MESSAGE value="Bases de datos y login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bases de datos y login" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MIPROYECTOWEB$Flask__TAREA_SEMANA_10_py_.coverage" NAME="Flask (TAREA SEMANA 10.py) Coverage Results" MODIFIED="1740109360366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/MIPROYECTOWEB$MIPROYECTOWEB.coverage" NAME="MIPROYECTOWEB Coverage Results" MODIFIED="1742711858969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MIPROYECTOWEB$MIPROYECTOWEB.coverage" NAME="MIPROYECTOWEB Coverage Results" MODIFIED="1742791797497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

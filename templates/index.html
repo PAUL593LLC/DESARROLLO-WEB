@@ -1,6 +1,15 @@
 {% extends "base.html" %}
-{% block title %} Inicio {% endblock %}
+
+{% block title %}Inicio{% endblock %}
+
 {% block content %}
-    <h2> Bienvenido a desarrollo de app "WEB" </h2>
-    <p> Esta es mi pagina de  inicio </p>
+<div class="container mt-5">
+    <div class="card shadow-lg">
+        <div class="card-body text-center">
+            <h2 class="card-title">Bienvenido a Desarrollo de App "WEB"</h2>
+            <p class="card-text">Esta es mi página de inicio.</p>
+            <a href="{{ url_for('formulario') }}" class="btn btn-primary">Ir al formulario</a>
+        </div>
+    </div>
+</div>
 {% endblock %}

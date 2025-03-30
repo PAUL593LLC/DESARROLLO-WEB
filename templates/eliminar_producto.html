@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Eliminar Producto{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="card shadow-lg">
+        <div class="card-body text-center">
+            <h2 class="card-title text-danger">Eliminar Producto</h2>
+            <p class="mb-4">¿Estás seguro de que deseas eliminar el producto <strong>{{ producto.nombre }}</strong>?</p>
+
+            <form method="POST" onsubmit="return confirmarEliminacion();">
+                {{ form.hidden_tag() }}  <!-- Protección CSRF si usas FlaskForm -->
+
+                <button type="submit" class="btn btn-danger">Sí, eliminar</button>
+                <a href="{{ url_for('listar_productos') }}" class="btn btn-secondary">Cancelar</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function confirmarEliminacion() {
+        return confirm("¿Estás seguro de que deseas eliminar este producto? Esta acción no se puede deshacer.");
+    }
+</script>
+
+{% endblock %}

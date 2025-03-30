@@ -1,29 +1,66 @@
+
 {% extends 'base.html' %}
 
 {% block title %}Iniciar Sesión{% endblock %}
 
 {% block content %}
-<h2>Iniciar Sesión</h2>
+<div class="container mt-5">
+    <div class="card shadow-lg">
+        <div class="card-body">
+            <h2 class="card-title text-center">Iniciar Sesión</h2>
 
-{% with messages = get_flashed_messages() %}
-  {% if messages %}
-    <ul>
-      {% for message in messages %}
-        <li style="color:red;">{{ message }}</li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-{% endwith %}
+            <!-- Mensajes Flash -->
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <div class="alert alert-danger" role="alert">
+                        <ul>
+                            {% for message in messages %}
+                                <li>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+            {% endwith %}
 
-<form method="post">
-    <label for="email">Correo electrónico:</label><br>
-    <input type="email" name="email" required><br><br>
+            <!-- Formulario de inicio de sesión -->
+            <form method="post" novalidate>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico:</label>
+                    <input type="email" name="email" class="form-control" required>
+                    <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
+                </div>
 
-    <label for="password">Contraseña:</label><br>
-    <input type="password" name="password" required><br><br>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña:</label>
+                    <input type="password" name="password" class="form-control" required>
+                    <div class="invalid-feedback">Por favor ingresa tu contraseña.</div>
+                </div>
 
-    <input type="submit" value="Iniciar sesión">
-</form>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                </div>
+            </form>
 
-<p>¿No tienes cuenta? <a href="{{ url_for('registro') }}">Regístrate aquí</a></p>
+            <p class="text-center mt-3">¿No tienes cuenta? <a href="{{ url_for('registro') }}">Regístrate aquí</a></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Validación de formulario con Bootstrap
+    (function () {
+        'use strict';
+        var forms = document.querySelectorAll('form');
+        Array.prototype.slice.call(forms).forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    })();
+</script>
+
 {% endblock %}
