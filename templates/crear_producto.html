@@ -1,58 +1,24 @@
 {% extends 'base.html' %}
-
 {% block title %}Crear Producto{% endblock %}
 
 {% block content %}
 <div class="container mt-4">
-    <div class="card shadow-lg">
-        <div class="card-body">
-            <h2 class="card-title text-center mb-4">Crear Nuevo Producto</h2>
-
-            <form method="POST" novalidate>
-                {{ form.hidden_tag() }}  <!-- Protección CSRF si usas FlaskForm -->
-
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" required>
-                    <div class="invalid-feedback">El nombre es obligatorio.</div>
-                </div>
-
-                <div class="mb-3">
-                    <label for="precio" class="form-label">Precio</label>
-                    <input type="number" step="0.01" class="form-control" id="precio" name="precio" required>
-                    <div class="invalid-feedback">El precio debe ser un número válido.</div>
-                </div>
-
-                <div class="mb-3">
-                    <label for="stock" class="form-label">Stock</label>
-                    <input type="number" class="form-control" id="stock" name="stock" required>
-                    <div class="invalid-feedback">El stock debe ser un número válido.</div>
-                </div>
-
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button type="submit" class="btn btn-primary">Guardar</button>
-                    <a href="{{ url_for('listar_productos') }}" class="btn btn-secondary">Cancelar</a>
-                </div>
-            </form>
+    <h2>Crear nuevo producto</h2>
+    <form method="POST">
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
         </div>
-    </div>
+        <div class="mb-3">
+            <label for="precio" class="form-label">Precio</label>
+            <input type="number" step="0.01" class="form-control" id="precio" name="precio" required>
+        </div>
+        <div class="mb-3">
+            <label for="stock" class="form-label">Stock</label>
+            <input type="number" class="form-control" id="stock" name="stock" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <a href="{{ url_for('listar_productos') }}" class="btn btn-secondary">Cancelar</a>
+    </form>
 </div>
-
-<script>
-    // Validación de formulario con Bootstrap
-    (function () {
-        'use strict';
-        var forms = document.querySelectorAll('form');
-        Array.prototype.slice.call(forms).forEach(function (form) {
-            form.addEventListener('submit', function (event) {
-                if (!form.checkValidity()) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-            }, false);
-        });
-    })();
-</script>
-
 {% endblock %}

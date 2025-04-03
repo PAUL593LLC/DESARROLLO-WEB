@@ -1,3 +1,6 @@
+from flask_login import UserMixin
+from Conexion.conexion import obtener_conexion
+from werkzeug.security import check_password_hash
 class Producto:
     def __init__(self, id_producto, nombre, precio, stock):
         self.id_producto = id_producto

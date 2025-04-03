@@ -3,8 +3,45 @@
 {% block title %} Acerca de {% endblock %}
 
 {% block content %}
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #FF5733;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .paragraph:nth-child(1) {
+            color: #1E90FF;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+        .paragraph:nth-child(2) {
+            color: #32CD32;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .paragraph:nth-child(3) {
+            color: #FF4500;
+            font-size: 1.2rem;
+            text-decoration: underline;
+        }
+        .creator {
+            font-size: 1.5rem;
+            color: #8A2BE2;
+            font-weight: bold;
+        }
+    </style>
+<div class="container text-center mt-4 animate__animated animate__fadeIn">
     <div class="container text-center mt-4">
         <h2 class="mb-3">Acerca de</h2>
-        <p class="lead">Esta es una referencia del proyecto.</p>
+         <p class="lead">Este proyecto fue desarrollado como parte de un curso de programación web en la Universidad Estatal Amazónica.</p>
+    <p>Utilizamos tecnologías como Flask, MySQL, y Bootstrap para crear una aplicación web funcional y moderna.</p>
+    <p>Creador:</p>
+    <ul class="list-unstyled">
+        <li>Paul Llerena - Estudiante UEA</li>
     </div>
 {% endblock %}

@@ -13,7 +13,7 @@ class Usuario(UserMixin):
     def obtener_por_email(email):
         conexion = obtener_conexion()
         cursor = conexion.cursor()
-        cursor.execute("SELECT id_usuarios, nombre, email, password FROM usuarios WHERE email = %s", (email,))
+        cursor.execute("SELECT id_usuario, nombre, mail, password FROM usuarios WHERE mail = %s", (email,))
         fila = cursor.fetchone()
         if fila:
             return Usuario(*fila)
@@ -23,7 +23,7 @@ class Usuario(UserMixin):
     def obtener_por_id(id_usuarios):
         conexion = obtener_conexion()
         cursor = conexion.cursor()
-        cursor.execute("SELECT id_usuarios, nombre, email, password FROM usuarios WHERE id_usuarios = %s", (id_usuarios,))
+        cursor.execute("SELECT id_usuario, nombre, mail, password FROM usuarios WHERE id_usuario = %s", (id_usuarios,))
         fila = cursor.fetchone()
         if fila:
             return Usuario(*fila)

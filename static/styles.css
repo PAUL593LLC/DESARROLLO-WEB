@@ -64,3 +64,14 @@ footer {
     font-size: 14px; /* Tamaño pequeño para el pie de página */
     font-weight: 400; /* Peso normal */
 }
+header {
+    position: relative;
+    text-align: center;
+}
+
+header img {
+    position: absolute;
+    left: 20px; /* Ajusta según sea necesario */
+    top: 50%;
+    transform: translateY(-50%);
+}

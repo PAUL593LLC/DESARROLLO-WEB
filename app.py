@@ -50,12 +50,9 @@ def resultado():
         return redirect(url_for('formulario'))
 
     return render_template('resultado.html', nombre=nombre)
-
-
 @app.route('/about')
 def about():
     return render_template('about.html')
-
 
 @app.route('/test_db')
 def test_db():
@@ -109,7 +106,7 @@ def registro():
         cursor = conexion.cursor()
 
         # Verificar si el usuario ya existe
-        cursor.execute("SELECT * FROM usuarios WHERE email = %s", (email,))
+        cursor.execute("SELECT * FROM usuarios WHERE mail = %s", (email,))
         usuario_existente = cursor.fetchone()
 
         if usuario_existente:
@@ -118,7 +115,7 @@ def registro():
             conexion.close()
             return redirect(url_for('registro'))
 
-        cursor.execute("INSERT INTO usuarios (nombre, email, password) VALUES (%s, %s, %s)",
+        cursor.execute("INSERT INTO usuarios (nombre, mail, password) VALUES (%s, %s, %s)",
                        (nombre, email, password_hash))
         conexion.commit()
         cursor.close()
@@ -139,7 +136,7 @@ def login():
         if usuario and usuario.verificar_password(password):
             login_user(usuario)
             flash('Inicio de sesión exitoso', 'success')
-            return redirect(url_for('protegido'))
+            return redirect(url_for('index'))
         else:
             flash('Email o contraseña incorrectos', 'danger')
 
@@ -160,20 +157,29 @@ def crear_producto():
             flash('Todos los campos son obligatorios.', 'danger')
     return render_template('crear_producto.html')
 
+@app.route('/productos')
+def listar_productos():
+    productos = Producto.obtener_todos()
+    return render_template('productos.html', productos=productos)
+@app.route('/editar/<int:id_producto>', methods=['GET', 'POST'])
+def editar_producto(id_producto):
+    producto = Producto.obtener_por_id(id_producto)
+    if request.method == 'POST':
+        nombre = request.form['nombre']
+        precio = request.form['precio']
+        stock = request.form['stock']
+        Producto.actualizar(id_producto, nombre, float(precio), int(stock))
+        flash('Producto actualizado correctamente.')
+        return redirect(url_for('listar_productos'))
+    return render_template('editar_producto.html', producto=producto)
 
 @app.route('/eliminar/<int:id_producto>', methods=['GET', 'POST'])
 def eliminar_producto(id_producto):
-    producto = Producto.obtener_por_id(id_producto)
-
-    if not producto:
-        flash('El producto no existe.', 'warning')
-        return redirect(url_for('listar_productos'))
-
     if request.method == 'POST':
         Producto.eliminar(id_producto)
-        flash('Producto eliminado correctamente.', 'success')
+        flash('Producto eliminado correctamente.')
         return redirect(url_for('listar_productos'))
-
+    producto = Producto.obtener_por_id(id_producto)
     return render_template('eliminar_producto.html', producto=producto)
 
 
