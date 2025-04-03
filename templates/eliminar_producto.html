@@ -5,6 +5,9 @@
 <div class="container mt-4">
     <h2>Eliminar producto</h2>
     <p>¿Estás seguro de que deseas eliminar el producto <strong>{{ producto.nombre }}</strong>?</p>
+ <p><strong>Nombre:</strong> {{ producto.nombre }}</p>
+    <p><strong>Precio:</strong> ${{ producto.precio }}</p>
+    <p><strong>Stock:</strong> {{ producto.stock }}</p>
 
     <form method="POST">
         <button type="submit" class="btn btn-danger">Sí, eliminar</button>

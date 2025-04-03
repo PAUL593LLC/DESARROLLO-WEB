@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -13,14 +12,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class="bg-primary text-white py-3">
-    <div class="container d-flex align-items-center">
-        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo Universidad Estatal Amazónica" class="mb-2 me-3" width="350">
-        <div>
+    <header class="bg-primary text-white py-3 text-center">
+        <div class="container">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo Universidad Estatal Amazónica" class="mb-2" width="350">
             <h1>UNIVERSIDAD ESTATAL AMAZONICA</h1>
             <h1>MI PROYECTO FLASK</h1>
         </div>
-    </div>
     </header>
 
     <!-- Barra de navegación -->
@@ -41,7 +38,7 @@
     </nav>
 
     <!-- Contenido principal -->
-    <main class="container mt-4">
+    <main class="container mt-4 d-flex justify-content-center text-center">
         {% block content %}{% endblock %}
     </main>
 
@@ -54,4 +51,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-

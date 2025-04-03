@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fda6d5e6-7597-4927-a2fc-fd96fd3d5827" name="Changes" comment="Construcción de una aplicación que incluya funciones de CRUD (crear, leer, actualizar, eliminar).">
-      <change afterPath="$PROJECT_DIR$/static/logo.png" afterDir="false" />
+    <list default="true" id="fda6d5e6-7597-4927-a2fc-fd96fd3d5827" name="Changes" comment="PROYECTO LISTO PARA PRESENTAR">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelos/modelos.py" beforeDir="false" afterPath="$PROJECT_DIR$/modelos/modelos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelos/productos.py" beforeDir="false" afterPath="$PROJECT_DIR$/modelos/productos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/crear_producto.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/crear_producto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/editar_producto.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/editar_producto.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/eliminar_producto.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/eliminar_producto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/productos.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/productos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/resgistro.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registro.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +164,7 @@
       <workItem from="1743629706408" duration="3092000" />
       <workItem from="1743632849417" duration="633000" />
       <workItem from="1743706176984" duration="6212000" />
-      <workItem from="1743712594275" duration="997000" />
+      <workItem from="1743712594275" duration="2802000" />
     </task>
     <task id="LOCAL-00001" summary="TAREA SEMANA 9">
       <option name="closed" value="true" />
@@ -280,7 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743299260865</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="PROYECTO LISTO PARA PRESENTAR">
+      <option name="closed" value="true" />
+      <created>1743713746651</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1743713746651</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +296,8 @@
     <MESSAGE value="Configuración,  modelos y consultas básicas." />
     <MESSAGE value="Bases de datos y login" />
     <MESSAGE value="Construcción de una aplicación que incluya funciones de CRUD (crear, leer, actualizar, eliminar)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Construcción de una aplicación que incluya funciones de CRUD (crear, leer, actualizar, eliminar)." />
+    <MESSAGE value="PROYECTO LISTO PARA PRESENTAR" />
+    <option name="LAST_COMMIT_MESSAGE" value="PROYECTO LISTO PARA PRESENTAR" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MIPROYECTOWEB$Flask__TAREA_SEMANA_10_py_.coverage" NAME="Flask (TAREA SEMANA 10.py) Coverage Results" MODIFIED="1740109360366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
